@@ -1,0 +1,51 @@
+FilmID;Titel;Beschreibung;Erscheinungsjahr;DauerMinuten;IstVerfuegbar
+1;Inception;Ein Dieb schleicht sich in die Träume von Menschen ein, um Geheimnisse zu stehlen.;2010;148;1
+2;The Dark Knight;Batman stellt sich dem chaotischen Joker entgegen, der Gotham City ins Chaos stürzt.;2008;152;1
+3;Interstellar;Astronauten reisen durch ein Wurmloch auf der Suche nach einer neuen Heimat für die Menschheit.;2014;169;1
+4;The Matrix;Ein Hacker entdeckt, dass die Welt eine simulierte Realität ist und kämpft gegen die Maschinen.;1999;136;1
+5;Forrest Gump;Die Geschichte des einfachen Mannes Forrest Gump, der unfreiwillig Zeuge historischer Ereignisse wird.;1994;142;1
+6;Pulp Fiction;Mehrere Kriminelle und Kleingangster in Los Angeles sind miteinander verstrickt.;1994;154;1
+7;The Shawshank Redemption;Ein zu Unrecht verurteilter Mann findet Hoffnung im Gefängnis durch Freundschaft.;1994;142;1
+8;Avengers: Endgame;Die übrig gebliebenen Avengers versuchen, die durch Thanos vernichtete Hälfte des Universums zu retten.;2019;181;1
+9;Parasite;Eine arme südkoreanische Familie schleicht sich in das Leben einer reichen Familie ein.;2019;132;1
+10;The Godfather;Ein mächtiger Mafiapate übergibt die Kontrolle seiner kriminellen Dynastie an seinen zurückhaltenden Sohn.;1972;175;1
+11;Toy Story;Spielzeug erwacht zum Leben, wenn keine Menschen in der Nähe sind.;1995;81;1
+12;Get Out;Ein afroamerikanischer Mann besucht die Familie seiner weißen Freundin und entdeckt etwas Verstörendes.;2017;104;1
+13;La La Land;Eine Schauspielerin und ein Jazzmusiker verlieben sich, während sie ihren Träumen nachjagen.;2016;128;1
+14;Mad Max: Fury Road;In einer postapokalyptischen Wüstenwelt flieht eine Gruppe vor einem tyrannischen Herrscher.;2015;120;0
+15;Schindlers Liste;Die wahre Geschichte von Oskar Schindler, der über 1000 jüdische Leben während des Holocaust rettete.;1993;195;1
+16;Gladiator;Ein römischer General wird versklavt und kämpft sich als Gladiator zurück zur Rache am Kaiser.;2000;155;1
+17;The Lion King;Der junge Löwe Simba muss sein Schicksal als König annehmen, nachdem sein Vater ermordet wurde.;1994;88;1
+18;Fight Club;Ein unzufriedener Büroangestellter gründet mit einem Seifenverkäufer einen Untergrundkampfclub.;1999;139;1
+19;Goodfellas;Die wahre Geschichte eines Mannes, der sich von der Straße bis zur Spitze der Mafia hocharbeitet.;1990;146;1
+20;The Silence of the Lambs;Eine FBI-Agentin sucht die Hilfe des inhaftierten Kannibalen Hannibal Lecter.;1991;118;1
+21;Jurassic Park;Dinosaurier werden in einem Freizeitpark zum Leben erweckt – mit katastrophalen Folgen.;1993;127;1
+22;Titanic;Eine Liebesgeschichte zwischen einem armen Künstler und einer reichen Frau auf dem Luxusdampfer Titanic.;1997;194;1
+23;The Lord of the Rings: The Fellowship of the Ring;Ein Hobbit bricht mit einer Gefährtenschaft auf, um einen mächtigen Ring zu vernichten.;2001;178;1
+24;Harry Potter and the Sorcerer's Stone;Ein Waisenjunge entdeckt, dass er ein Zauberer ist, und besucht die Zaubererschule Hogwarts.;2001;152;1
+25;Avatar;Ein gelähmter Marine erkundet als Avatar den Planeten Pandora und schließt sich den Einheimischen an.;2009;162;1
+26;The Avengers;Die mächtigsten Helden der Erde vereinen sich, um die Welt vor einer außerirdischen Invasion zu retten.;2012;143;1
+27;Iron Man;Ein Milliardär baut nach seiner Gefangenschaft einen motorisierten Anzug und wird zum Superhelden.;2008;126;1
+28;Spider-Man: No Way Home;Spider-Man bittet Doctor Strange um Hilfe, was Bösewichte aus anderen Dimensionen freisetzte.;2021;148;1
+29;Dune;Ein junger Adliger übernimmt die Herrschaft über den gefährlichsten Planeten im Universum.;2021;155;1
+30;No Time to Die;James Bond kehrt aus dem Ruhestand zurück, um einem mysteriösen Bösewicht zu begegnen.;2021;163;1
+31;The Revenant;Ein Pelzjäger kämpft ums Überleben in der Wildnis und sinnt auf Rache für den Tod seines Sohnes.;2015;156;1
+32;Whiplash;Ein junger Schlagzeuger strebt nach Perfektion unter einem gnadenlosen Musiklehrer.;2014;107;1
+33;1917;Zwei britische Soldaten müssen im Ersten Weltkrieg eine lebenswichtige Botschaft durch feindliches Gebiet überbringen.;2019;119;1
+34;Joker;Die Entstehungsgeschichte des ikonischen Batman-Schurken Arthur Fleck.;2019;122;1
+35;The Wolf of Wall Street;Die Geschichte des aufstrebenden Börsenmaklers Jordan Belfort und seiner kriminellen Aktivitäten.;2013;180;1
+36;Django Unchained;Ein befreiter Sklave reist mit einem deutschen Kopfgeldjäger, um seine versklavte Frau zu retten.;2012;165;1
+37;Inglourious Basterds;Im besetzten Frankreich plant eine Gruppe jüdisch-amerikanischer Soldaten die Ermordung von Nazi-Führern.;2009;153;1
+38;The Grand Budapest Hotel;Die Abenteuer eines legendären Concierges eines berühmten europäischen Hotels in der Zwischenkriegszeit.;2014;99;1
+39;Coco;Ein mexikanischer Junge reist ins Land der Toten, um das Geheimnis um sein Musikerbe zu lüften.;2017;105;1
+40;Up;Ein älterer Witwer bindet tausende Luftballons an sein Haus und fliegt in ein Abenteuer.;2009;96;1
+41;Soul;Ein Jazzmusiker findet sich in der Welt vor der Geburt wieder und entdeckt den Sinn des Lebens.;2020;100;1
+42;Inside Out;Die Emotionen eines kleinen Mädchens kämpfen darum, ihr nach einem Umzug zu helfen.;2015;95;1
+43;Bohemian Rhapsody;Die Biografie der legendären Rockband Queen und ihres charismatischen Sängers Freddie Mercury.;2018;134;1
+44;Rocketman;Das Leben des Rockstars Elton John von seiner Kindheit bis zu seinem weltweiten Ruhm.;2019;121;1
+45;Mamma Mia!;Eine Frau lädt kurz vor ihrer Hochzeit drei Männer ein, von denen einer ihr Vater sein könnte.;2008;108;1
+46;The Truman Show;Ein Mann entdeckt, dass sein gesamtes Leben eine Reality-TV-Show ist.;1998;103;1
+47;Eternal Sunshine of the Spotless Mind;Ein Paar lässt ihre Erinnerungen aneinander löschen, um den Schmerz der Trennung zu vergessen.;2004;108;1
+48;Her;Ein introvertierter Schriftsteller verliebt sich in sein Betriebssystem mit künstlicher Intelligenz.;2013;126;1
+49;Blade Runner 2049;Ein Replikant-Jäger entdeckt ein Geheimnis, das die Menschheit erschüttern könnte.;2017;164;1
+50;Everything Everywhere All at Once;Eine Chinesin kämpft im Multiversum gegen eine nihilistische Bedrohung.;2022;139;1
