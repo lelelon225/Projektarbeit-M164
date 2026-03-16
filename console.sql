@@ -1,30 +1,18 @@
--- ============================================================
--- Skript 1: Datenbank und Tabellen erstellen
--- Projekt: Streaming-Plattform (ähnlich Netflix)
--- ============================================================
-
 CREATE DATABASE IF NOT EXISTS Library
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
 
 USE Library;
 
--- ------------------------------------------------------------
--- Tabelle: Genre
--- Beschreibung: Enthält alle verfügbaren Genres (z.B. Action, Drama)
--- ------------------------------------------------------------
-CREATE TABLE Genre (
+CREATE TABLE IF NOT EXISTS Genre (
     GenreID     INT             NOT NULL AUTO_INCREMENT,
     GenreName   VARCHAR(100)    NOT NULL,
     CONSTRAINT pk_Genre PRIMARY KEY (GenreID),
     CONSTRAINT uq_Genre_GenreName UNIQUE (GenreName)
 );
 
--- ------------------------------------------------------------
--- Tabelle: Benutzer
--- Beschreibung: Registrierte Nutzer der Streaming-Plattform
--- ------------------------------------------------------------
-CREATE TABLE Benutzer (
+
+CREATE TABLE IF NOT EXISTS Benutzer (
     BenutzerID          INT             NOT NULL AUTO_INCREMENT,
     Vorname             VARCHAR(100)    NOT NULL,
     Nachname            VARCHAR(100)    NOT NULL,
@@ -36,11 +24,8 @@ CREATE TABLE Benutzer (
     CONSTRAINT uq_Benutzer_Email UNIQUE (Email)
 );
 
--- ------------------------------------------------------------
--- Tabelle: Film
--- Beschreibung: Enthält alle Filme auf der Plattform
--- ------------------------------------------------------------
-CREATE TABLE Film (
+
+CREATE TABLE IF NOT EXISTS Film (
     FilmID          INT             NOT NULL AUTO_INCREMENT,
     Titel           VARCHAR(255)    NOT NULL,
     Beschreibung    TEXT,
@@ -52,11 +37,7 @@ CREATE TABLE Film (
     CONSTRAINT ck_Film_DauerMinuten CHECK (DauerMinuten > 0)
 );
 
--- ------------------------------------------------------------
--- Tabelle: Serie
--- Beschreibung: Enthält alle Serien auf der Plattform
--- ------------------------------------------------------------
-CREATE TABLE Serie (
+CREATE TABLE IF NOT EXISTS Serie (
     SerieID         INT             NOT NULL AUTO_INCREMENT,
     Titel           VARCHAR(255)    NOT NULL,
     Beschreibung    TEXT,
@@ -66,11 +47,7 @@ CREATE TABLE Serie (
     CONSTRAINT ck_Serie_Erscheinungsjahr CHECK (Erscheinungsjahr >= 1888)
 );
 
--- ------------------------------------------------------------
--- Tabelle: Episode
--- Beschreibung: Episoden einer Serie (1:n zu Serie)
--- ------------------------------------------------------------
-CREATE TABLE Episode (
+CREATE TABLE IF NOT EXISTS Episode (
     EpisodeID       INT             NOT NULL AUTO_INCREMENT,
     SerieID         INT             NOT NULL,
     Titel           VARCHAR(255)    NOT NULL,
@@ -86,11 +63,7 @@ CREATE TABLE Episode (
     CONSTRAINT ck_Episode_DauerMinuten CHECK (DauerMinuten > 0)
 );
 
--- ------------------------------------------------------------
--- Tabelle: FilmGenre (Zwischentabelle Film <-> Genre, m:n)
--- Beschreibung: Ordnet Filmen ein oder mehrere Genres zu
--- ------------------------------------------------------------
-CREATE TABLE FilmGenre (
+CREATE TABLE IF NOT EXISTS FilmGenre (
     FilmGenreID INT NOT NULL AUTO_INCREMENT,
     FilmID      INT NOT NULL,
     GenreID     INT NOT NULL,
@@ -104,11 +77,7 @@ CREATE TABLE FilmGenre (
     CONSTRAINT uq_FilmGenre UNIQUE (FilmID, GenreID)
 );
 
--- ------------------------------------------------------------
--- Tabelle: SerieGenre (Zwischentabelle Serie <-> Genre, m:n)
--- Beschreibung: Ordnet Serien ein oder mehrere Genres zu
--- ------------------------------------------------------------
-CREATE TABLE SerieGenre (
+CREATE TABLE IF NOT EXISTS SerieGenre (
     SerieGenreID    INT NOT NULL AUTO_INCREMENT,
     SerieID         INT NOT NULL,
     GenreID         INT NOT NULL,
@@ -122,11 +91,7 @@ CREATE TABLE SerieGenre (
     CONSTRAINT uq_SerieGenre UNIQUE (SerieID, GenreID)
 );
 
--- ------------------------------------------------------------
--- Tabelle: Bewertung (Ereignis: Benutzer bewertet Film, m:n mit Attributen)
--- Beschreibung: Benutzer können Filme mit 1–5 Sternen bewerten
--- ------------------------------------------------------------
-CREATE TABLE Bewertung (
+CREATE TABLE IF NOT EXISTS Bewertung (
     BewertungID     INT         NOT NULL AUTO_INCREMENT,
     BenutzerID      INT         NOT NULL,
     FilmID          INT         NOT NULL,
@@ -143,12 +108,8 @@ CREATE TABLE Bewertung (
     CONSTRAINT uq_Bewertung UNIQUE (BenutzerID, FilmID)
 );
 
--- ------------------------------------------------------------
--- Tabelle: WatchHistory (Ereignis: Benutzer schaut Film oder Episode)
--- Beschreibung: Protokolliert den Wiedergabeverlauf aller Benutzer
--- FilmID und EpisodeID sind optional (NULL erlaubt), je nach Inhalt
--- ------------------------------------------------------------
-CREATE TABLE WatchHistory (
+
+CREATE TABLE IF NOT EXISTS WatchHistory (
     WatchID             INT         NOT NULL AUTO_INCREMENT,
     BenutzerID          INT         NOT NULL,
     FilmID              INT,
