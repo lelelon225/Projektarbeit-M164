@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
+<<<<<<< HEAD
     <file url="file://$PROJECT_DIR$/../Consoles/25jCreateMaierHebeisen.sql" value="97e71bcb-115e-4449-988b-7ed2f896efc7" />
+=======
+>>>>>>> 53a5a1501c1d9329d9fe81e19e3e548f85727611
     <file url="file://$PROJECT_DIR$/../Consoles/25jInsertMaierHebeisen.sql" value="97e71bcb-115e-4449-988b-7ed2f896efc7" />
     <file url="file://$PROJECT_DIR$/../Consoles/25jSelectMaierHebeisen.sql" value="97e71bcb-115e-4449-988b-7ed2f896efc7" />
   </component>

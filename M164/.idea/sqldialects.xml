@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+<<<<<<< HEAD
     <file url="file://$PROJECT_DIR$/../Consoles/25jCreateMaierHebeisen.sql" dialect="MariaDB" />
+=======
+>>>>>>> 53a5a1501c1d9329d9fe81e19e3e548f85727611
     <file url="file://$PROJECT_DIR$/../Consoles/25jInsertMaierHebeisen.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/../Consoles/25jSelectMaierHebeisen.sql" dialect="MariaDB" />
     <file url="PROJECT" dialect="MariaDB" />
