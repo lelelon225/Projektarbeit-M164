@@ -1,0 +1,163 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="ER-Diagramm: Streaming-Plattform" id="Oy_papo1cTq_DIfMcQiH">
+    <mxGraphModel dx="1868" dy="1774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1z-opIObINgy-nBDOK5-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Benutzer" vertex="1">
+          <mxGeometry height="180" width="230" x="40" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-2" parent="n1z-opIObINgy-nBDOK5-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ BenutzerID: INT (PK)" vertex="1">
+          <mxGeometry height="26" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-3" parent="n1z-opIObINgy-nBDOK5-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=4;spacingRight=4;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-4" parent="n1z-opIObINgy-nBDOK5-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ Vorname: VARCHAR(100) &#xa;+ Nachname: VARCHAR(100) &#xa;+ Email: VARCHAR(255) UQ &#xa;+ Passwort: VARCHAR(255) &#xa;+ Registrierungsdatum: TIMESTAMP" vertex="1">
+          <mxGeometry height="120" width="230" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Film" vertex="1">
+          <mxGeometry height="130" width="180" x="350" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-6" parent="n1z-opIObINgy-nBDOK5-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ FilmID: INT (PK)" vertex="1">
+          <mxGeometry height="26" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-7" parent="n1z-opIObINgy-nBDOK5-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=4;spacingRight=4;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-8" parent="n1z-opIObINgy-nBDOK5-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ Titel: VARCHAR(255)&#xa;+ Beschreibung: TEXT &#xa;+ Erscheinungsjahr: INT &#xa;+ DauerMinuten: INT" vertex="1">
+          <mxGeometry height="70" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d4e6f1;strokeColor=#3498db;" value="Serie" vertex="1">
+          <mxGeometry height="110" width="180" x="650" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-10" parent="n1z-opIObINgy-nBDOK5-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ SerieID: INT (PK)" vertex="1">
+          <mxGeometry height="26" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-11" parent="n1z-opIObINgy-nBDOK5-9" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=4;spacingRight=4;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-12" parent="n1z-opIObINgy-nBDOK5-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ Titel: VARCHAR(255) &#xa;+ Beschreibung: TEXT &#xa;+ Erscheinungsjahr: INT" vertex="1">
+          <mxGeometry height="50" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-13" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e2efda;strokeColor=#70ad47;" value="Genre" vertex="1">
+          <mxGeometry height="110" width="200" x="950" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-14" parent="n1z-opIObINgy-nBDOK5-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ GenreID: INT (PK)" vertex="1">
+          <mxGeometry height="26" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-15" parent="n1z-opIObINgy-nBDOK5-13" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=4;spacingRight=4;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-16" parent="n1z-opIObINgy-nBDOK5-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ GenreName: VARCHAR(100) UQ" vertex="1">
+          <mxGeometry height="50" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-17" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fce4d6;strokeColor=#ed7d31;" value="Episode" vertex="1">
+          <mxGeometry height="160" width="180" x="650" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-18" parent="n1z-opIObINgy-nBDOK5-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ EpisodeID: INT (PK)" vertex="1">
+          <mxGeometry height="26" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-19" parent="n1z-opIObINgy-nBDOK5-17" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=4;spacingRight=4;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-20" parent="n1z-opIObINgy-nBDOK5-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ SerieID: INT (FK) &#xa;+ Titel: VARCHAR(255) &#xa;+ Staffel: INT &#xa;+ EpisodenNummer: INT &#xa;+ DauerMinuten: INT" vertex="1">
+          <mxGeometry height="100" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-21" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f4cccc;strokeColor=#c5504f;" value="Bewertung" vertex="1">
+          <mxGeometry height="140" width="190" x="200" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-22" parent="n1z-opIObINgy-nBDOK5-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ BewertungID: INT (PK)" vertex="1">
+          <mxGeometry height="26" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-23" parent="n1z-opIObINgy-nBDOK5-21" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=4;spacingRight=4;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="190" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-24" parent="n1z-opIObINgy-nBDOK5-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ BenutzerID: INT (FK) &#xa;+ FilmID: INT (FK) &#xa;+ Bewertung: INT (1-5) &#xa;+ Bewertungsdatum: TIMESTAMP" vertex="1">
+          <mxGeometry height="80" width="190" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-25" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#daeef4;strokeColor=#0277bd;" value="WatchHistory" vertex="1">
+          <mxGeometry height="160" width="170" x="-140" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-26" parent="n1z-opIObINgy-nBDOK5-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ WatchID: INT (PK)" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-27" parent="n1z-opIObINgy-nBDOK5-25" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=4;spacingRight=4;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-28" parent="n1z-opIObINgy-nBDOK5-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ BenutzerID: INT (FK) &#xa;+ FilmID: INT (FK) [NULL] &#xa;+ EpisodeID: INT (FK) [NULL]&#xa;+ StartZeitpunkt: TIMESTAMP &#xa;+ FortschrittProzent: INT" vertex="1">
+          <mxGeometry height="100" width="170" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-29" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f3e5ab;strokeColor=#bfb000;" value="FilmGenre" vertex="1">
+          <mxGeometry height="110" width="180" x="480" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-30" parent="n1z-opIObINgy-nBDOK5-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ FilmGenreID: INT (PK)" vertex="1">
+          <mxGeometry height="26" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-31" parent="n1z-opIObINgy-nBDOK5-29" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=4;spacingRight=4;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-32" parent="n1z-opIObINgy-nBDOK5-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ FilmID: INT (FK)&#xa;+ GenreID: INT (FK)" vertex="1">
+          <mxGeometry height="50" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-33" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f3e5ab;strokeColor=#bfb000;" value="SerieGenre" vertex="1">
+          <mxGeometry height="110" width="180" x="850" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-34" parent="n1z-opIObINgy-nBDOK5-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ SerieGenreID: INT (PK)" vertex="1">
+          <mxGeometry height="26" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-35" parent="n1z-opIObINgy-nBDOK5-33" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=4;spacingRight=4;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-36" parent="n1z-opIObINgy-nBDOK5-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ SerieID: INT (FK)&#xa;+ GenreID: INT (FK)" vertex="1">
+          <mxGeometry height="50" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-37" edge="1" parent="1" source="n1z-opIObINgy-nBDOK5-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;dashPattern=1 4;" target="n1z-opIObINgy-nBDOK5-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-39" edge="1" parent="1" source="n1z-opIObINgy-nBDOK5-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;dashPattern=1 4;" target="n1z-opIObINgy-nBDOK5-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-41" edge="1" parent="1" source="n1z-opIObINgy-nBDOK5-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;dashPattern=1 4;" target="n1z-opIObINgy-nBDOK5-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-42" connectable="0" parent="n1z-opIObINgy-nBDOK5-41" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;" value="1:n" vertex="1">
+          <mxGeometry relative="1" y="-15" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-43" edge="1" parent="1" source="n1z-opIObINgy-nBDOK5-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;dashPattern=1 4;" target="n1z-opIObINgy-nBDOK5-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-45" edge="1" parent="1" source="n1z-opIObINgy-nBDOK5-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;dashPattern=1 4;" target="n1z-opIObINgy-nBDOK5-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-46" connectable="0" parent="n1z-opIObINgy-nBDOK5-45" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;" value="1:n" vertex="1">
+          <mxGeometry relative="1" y="-15" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-47" edge="1" parent="1" source="n1z-opIObINgy-nBDOK5-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;dashPattern=1 4;" target="n1z-opIObINgy-nBDOK5-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-48" edge="1" parent="1" source="n1z-opIObINgy-nBDOK5-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;dashPattern=1 4;" target="n1z-opIObINgy-nBDOK5-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-49" connectable="0" parent="n1z-opIObINgy-nBDOK5-48" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;" value="1:n" vertex="1">
+          <mxGeometry relative="1" y="-15" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-50" edge="1" parent="1" source="n1z-opIObINgy-nBDOK5-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;dashPattern=1 4;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="n1z-opIObINgy-nBDOK5-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-51" edge="1" parent="1" source="n1z-opIObINgy-nBDOK5-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;dashPattern=1 4;" target="n1z-opIObINgy-nBDOK5-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-52" connectable="0" parent="n1z-opIObINgy-nBDOK5-51" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;" value="1:n" vertex="1">
+          <mxGeometry relative="1" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-53" edge="1" parent="1" source="n1z-opIObINgy-nBDOK5-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;dashPattern=1 4;" target="n1z-opIObINgy-nBDOK5-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n1z-opIObINgy-nBDOK5-59" edge="1" parent="1" source="n1z-opIObINgy-nBDOK5-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="n1z-opIObINgy-nBDOK5-32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
