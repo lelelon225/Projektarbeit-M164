@@ -3,7 +3,7 @@ USE INF2025j_Hebeisen_Maier_StreamingLibrary;
 -- ------------------------------------------------------------
 -- Import: Genre
 -- ------------------------------------------------------------
-LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\'
+LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\Genre.csv'
 INTO TABLE Genre
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ';'
@@ -15,7 +15,7 @@ IGNORE 1 ROWS
 -- ------------------------------------------------------------
 -- Import: Benutzer
 -- ------------------------------------------------------------
-LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\'
+LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\Benutzer.csv'
 INTO TABLE Benutzer
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ';'
@@ -27,7 +27,7 @@ IGNORE 1 ROWS
 -- ------------------------------------------------------------
 -- Import: Film
 -- ------------------------------------------------------------
-LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\'
+LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\Film.csv'
 INTO TABLE Film
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ';'
@@ -39,7 +39,7 @@ IGNORE 1 ROWS
 -- ------------------------------------------------------------
 -- Import: Serie
 -- ------------------------------------------------------------
-LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\'
+LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\Serie.csv'
 INTO TABLE Serie
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ';'
@@ -51,7 +51,7 @@ IGNORE 1 ROWS
 -- ------------------------------------------------------------
 -- Import: Episode
 -- ------------------------------------------------------------
-LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\'
+LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\Episode.csv'
 INTO TABLE Episode
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ';'
@@ -63,7 +63,7 @@ IGNORE 1 ROWS
 -- ------------------------------------------------------------
 -- Import: FilmGenre
 -- ------------------------------------------------------------
-LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\'
+LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\FilmGenre.csv'
 INTO TABLE FilmGenre
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ';'
@@ -75,7 +75,7 @@ IGNORE 1 ROWS
 -- ------------------------------------------------------------
 -- Import: SerieGenre
 -- ------------------------------------------------------------
-LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\'
+LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\SerieGenre.csv'
 INTO TABLE SerieGenre
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ';'
@@ -87,7 +87,7 @@ IGNORE 1 ROWS
 -- ------------------------------------------------------------
 -- Import: Bewertung
 -- ------------------------------------------------------------
-LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\'
+LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\Bewertung.csv'
 INTO TABLE Bewertung
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ';'
@@ -99,7 +99,7 @@ IGNORE 1 ROWS
 -- ------------------------------------------------------------
 -- Import: WatchHistory
 -- ------------------------------------------------------------
-LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\'
+LOAD DATA LOCAL INFILE 'C:\\Daten\\CSV\\WatchHistory.csv'
 INTO TABLE WatchHistory
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ';'

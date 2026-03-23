@@ -11,7 +11,6 @@ USE INF2025j_Hebeisen_Maier_StreamingLibrary;
 -- Tabellen: Genre
 -- ------------------------------------------------------------
 SELECT
-    GenreID,
     GenreName
 FROM Genre
 ORDER BY GenreName ASC;
@@ -23,7 +22,6 @@ ORDER BY GenreName ASC;
 -- Tabellen: Serie
 -- ------------------------------------------------------------
 SELECT
-    SerieID,
     Titel,
     Erscheinungsjahr
 FROM Serie
