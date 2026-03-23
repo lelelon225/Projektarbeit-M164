@@ -3,7 +3,7 @@
 -- Projekt: Streaming-Plattform
 -- ============================================================
 
-USE Library;
+USE INF2025j_Hebeisen_Maier_StreamingLibrary;
 
 -- ------------------------------------------------------------
 -- Abfrage 1: Alle verfügbaren Genres anzeigen

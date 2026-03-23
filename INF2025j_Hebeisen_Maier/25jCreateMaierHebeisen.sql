@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS Library
+CREATE DATABASE IF NOT EXISTS INF2025j_Hebeisen_Maier_StreamingLibrary
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
 
-USE Library;
+USE INF2025j_Hebeisen_Maier_StreamingLibrary;
 
 CREATE TABLE IF NOT EXISTS Genre (
     GenreID     INT             NOT NULL AUTO_INCREMENT,
